@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Tangerine:wght@400;700&display=swap');
 
 :root {
   --black: #080808;
@@ -13,6 +13,7 @@
   --gold-soft: rgba(196, 176, 138, 0.18);
   --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --sans: 'Montserrat', Arial, Helvetica, sans-serif;
+  --script: 'Tangerine', cursive;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --container: 1180px;
 }
@@ -375,9 +376,11 @@ img {
 
 .opening__ornament,
 .closing__ornament {
-  font-family: var(--serif);
-  font-size: clamp(26px, 4vw, 42px);
-  color: var(--gold);
+  display: block;
+  width: clamp(40px, 6vw, 70px);
+  height: clamp(40px, 6vw, 70px);
+  object-fit: contain;
+  filter: brightness(1.2) drop-shadow(0 0 8px rgba(196, 176, 138, 0.4));
 }
 
 .opening__label {
@@ -390,11 +393,12 @@ img {
 
 .opening__names {
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(58px, 18vw, 110px);
-  line-height: 0.8;
-  letter-spacing: -0.05em;
-  font-weight: 400;
+  font-family: var(--script);
+  font-size: clamp(80px, 22vw, 160px);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .opening__names span {
@@ -518,11 +522,11 @@ img {
 
 .hero h2 {
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(72px, 16vw, 164px);
-  line-height: 0.82;
-  letter-spacing: -0.05em;
-  font-weight: 400;
+  font-family: var(--script);
+  font-size: clamp(80px, 18vw, 180px);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  font-weight: 700;
 }
 
 .hero h2 em {
@@ -537,6 +541,13 @@ img {
   gap: 16px;
   margin: 20px auto 30px;
   color: var(--gold);
+}
+
+.hero__rule-ornament {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(1.2) drop-shadow(0 0 8px rgba(196, 176, 138, 0.4));
 }
 
 .hero__rule span {
@@ -733,10 +744,10 @@ img {
 
 .person h3 {
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(32px, 3vw, 48px);
+  font-family: var(--script);
+  font-size: clamp(40px, 4vw, 64px);
   line-height: 1;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .person__parents {
@@ -1192,11 +1203,11 @@ img {
 
 .closing__content h2 {
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(52px, 7vw, 94px);
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-  font-weight: 400;
+  font-family: var(--script);
+  font-size: clamp(60px, 8vw, 110px);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  font-weight: 700;
 }
 
 .closing__content p {
