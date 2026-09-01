@@ -86,17 +86,15 @@
     }
   });
 
-  const scrollProgressBar = document.querySelector('.scroll-progress__bar');
+  const scrollProgressBar = document.getElementById('scrollProgressBar');
 
   function updateScrollProgress() {
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     const progress = maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0;
     const clamped = Math.min(Math.max(progress, 0), 100);
 
-    document.documentElement.style.setProperty('--scroll-progress', `${clamped}%`);
-
     if (scrollProgressBar) {
-      scrollProgressBar.style.height = `${clamped}%`;
+      scrollProgressBar.style.width = `${clamped}%`;
     }
   }
 
